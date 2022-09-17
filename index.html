@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>ITMD-361 Lab 4</title>
@@ -8,19 +8,30 @@
   <h1>Volunteer Form</h1>
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" autocomplete="on">
     <fieldset>
-    <legend>My Info</legend>
-    <div>
-      <label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
-    </div>
-    <div>
-      <label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
-    </div>
-    <div>
-      <label>Phone Number: <input type="tel" id="phone" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
-    </div>
-    <div>
-      <label>Email Address: <input type="email" id="email" name="email_field" ></label>
-    </div>
+      <legend>My Info</legend>
+      <div>
+        <label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
+      </div>
+      <div>
+        <label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
+      </div>
+      <div>
+        <label>Phone Number: <input type="tel" id="phone" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+      </div>
+      <div>
+        <label>Email Address: <input type="email" id="email" name="email_field" ></label>
+      </div>
+      <div>
+        <label><input type="hidden" name="hidden_field"></label>
+      </div>
+      <div>
+        <label for="Gender"> Select appropriate Gender</label> 
+      </div>
+      <div>
+        <input type="radio" name="gender_field" value="male"> Male<br>
+        <input type="radio" name="gender_field" value="female"> Female<br>
+        <input type="radio" name="gender_field" value="other"> Other <br>
+      </div>
     </fieldset>
   </form>
 </body>
